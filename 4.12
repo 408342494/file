@@ -1,0 +1,56 @@
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git init   //初始化
+初始化空的 Git 仓库于 /home/rong/桌面/zzzzz/.git/
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ ls  
+assets           index.html    package.json       src
+cooking.conf.js  node_modules  postcss.config.js
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ echo "#shit " >> README.md //创建一个EADME.md 的文档  内容是#shit 
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ ls
+assets           index.html    package.json       README.md
+cooking.conf.js  node_modules  postcss.config.js  src
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ cat README.md //查看文件
+#shit 
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ rm -rf README.md  //忽视
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ 
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ ls
+assets           index.html    package.json       src
+cooking.conf.js  node_modules  postcss.config.js
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git init
+重新初始化现存的 Git 仓库于 /home/rong/桌面/zzzzz/.git/
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git add *  //添加所有文件  *代表所有文件 或者具体文件
+下列路径根据您的一个 .gitignore 文件而被忽略：
+node_modules
+使用 -f 参数如果您确实要添加它们。
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git commit -m "add'
+> c^C
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git commit -m "add"  之前添加的提交  本地
+[master （根提交） 4732d45] add
+ 14 files changed, 302 insertions(+)
+ create mode 100644 assets/i/logo.png
+ create mode 100644 assets/i/placehold.png
+ create mode 100644 assets/mock/get_ad_banner.json
+ create mode 100755 cooking.conf.js
+ create mode 100755 index.html
+ create mode 100755 package.json
+ create mode 100644 postcss.config.js
+ create mode 100644 src/app.sass
+ create mode 100755 src/app.vue
+ create mode 100755 src/main.js
+ create mode 100755 src/pages/home.vue
+ create mode 100755 src/pages/test/detail.vue
+ create mode 100755 src/pages/test/list.vue
+ create mode 100755 src/routes/web.js
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ ls
+assets           index.html    package.json       src
+cooking.conf.js  node_modules  postcss.config.js
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git pull  
+fatal: 未指定远程仓库。请通过一个 URL 或远程仓库名指定，用以获取新提交。
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git remote add fuck git@github.com:408342494/rjj.git  添加到远程地址
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git push fuck master
+对象计数中: 23, 完成.   推送到远程地址
+Delta compression using up to 4 threads.
+压缩对象中: 100% (21/21), 完成.
+写入对象中: 100% (23/23), 15.00 KiB | 0 bytes/s, 完成.
+Total 23 (delta 0), reused 0 (delta 0)
+^C
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ git@github.com:408342494/rjj.git
+

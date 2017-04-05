@@ -1,0 +1,991 @@
+rong@rong-GE60-0NC-GE60-0ND:~$ cd ~/
+rong@rong-GE60-0NC-GE60-0ND:~$ 
+rong@rong-GE60-0NC-GE60-0ND:~$ 
+rong@rong-GE60-0NC-GE60-0ND:~$ 
+rong@rong-GE60-0NC-GE60-0ND:~$ ls
+node  node_modules  公共的  模板  视频  图片  文档  下载  音乐  桌面
+rong@rong-GE60-0NC-GE60-0ND:~$ cd 桌面
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ ls
+archive(1).zip  dist_vue.zip       test.js       用过的命令行
+archive.zip     linux慕课笔记.odt  未命名文件夹
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ unzip archive
+Archive:  archive.zip
+90deaaa51ba292ad8cb99a0aa629a2f428f283b1
+  inflating: .babelrc                
+ extracting: .gitignore              
+  inflating: cooking.conf.js         
+  inflating: index.html              
+  inflating: package.json            
+   creating: src/
+  inflating: src/app.vue             
+  inflating: src/main.js             
+   creating: src/pages/
+  inflating: src/pages/home.vue      
+   creating: src/pages/test/
+  inflating: src/pages/test/detail.vue  
+  inflating: src/pages/test/list.vue  
+   creating: src/routes/
+  inflating: src/routes/web.js       
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ unzip archive vue
+Archive:  archive.zip
+90deaaa51ba292ad8cb99a0aa629a2f428f283b1
+caution: filename not matched:  vue
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ unzip archive.zip vue
+Archive:  archive.zip
+90deaaa51ba292ad8cb99a0aa629a2f428f283b1
+caution: filename not matched:  vue
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ ls
+archive(1).zip   dist_vue.zip       package.json  未命名文件夹
+archive.zip      index.html         src           用过的命令行
+cooking.conf.js  linux慕课笔记.odt  test.js
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ npm install
+npm ERR! Linux 4.4.0-21-generic
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+npm ERR! node v7.8.0
+npm ERR! npm  v4.2.0
+npm ERR! code EAI_AGAIN
+npm ERR! errno EAI_AGAIN
+npm ERR! syscall getaddrinfo
+
+npm ERR! getaddrinfo EAI_AGAIN registry.npmjs.org:443
+npm ERR! 
+npm ERR! If you need help, you may report this error at:
+npm ERR!     <https://github.com/npm/npm/issues>
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/rong/.npm/_logs/2017-04-01T20_46_20_131Z-debug.log
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ npm install
+webapp@1.0.0 /home/rong/桌面
+├─┬ babel-core@6.24.0 
+│ ├─┬ babel-code-frame@6.22.0 
+│ │ ├── esutils@2.0.2 
+│ │ └── js-tokens@3.0.1 
+│ ├─┬ babel-generator@6.24.0 
+│ │ ├─┬ detect-indent@4.0.0 
+│ │ │ └─┬ repeating@2.0.1 
+│ │ │   └── is-finite@1.0.2 
+│ │ ├── jsesc@1.3.0 
+│ │ └── trim-right@1.0.1 
+│ ├── babel-helpers@6.23.0 
+│ ├── babel-messages@6.23.0 
+│ ├─┬ babel-register@6.24.0 
+│ │ ├── core-js@2.4.1 
+│ │ ├─┬ home-or-tmp@2.0.0 
+│ │ │ ├── os-homedir@1.0.2 
+│ │ │ └── os-tmpdir@1.0.2 
+│ │ └── source-map-support@0.4.14 
+│ ├─┬ babel-runtime@6.23.0 
+│ │ └── regenerator-runtime@0.10.3 
+│ ├── babel-template@6.23.0 
+│ ├─┬ babel-traverse@6.23.1 
+│ │ ├── globals@9.17.0 
+│ │ └─┬ invariant@2.2.2 
+│ │   └── loose-envify@1.3.1 
+│ ├─┬ babel-types@6.23.0 
+│ │ └── to-fast-properties@1.0.2 
+│ ├── babylon@6.16.1 
+│ ├── convert-source-map@1.5.0 
+│ ├─┬ debug@2.6.3 
+│ │ └── ms@0.7.2 
+│ ├── json5@0.5.1 
+│ ├── lodash@4.17.4 
+│ ├─┬ minimatch@3.0.3 
+│ │ └─┬ brace-expansion@1.1.6 
+│ │   ├── balanced-match@0.4.2 
+│ │   └── concat-map@0.0.1 
+│ ├── path-is-absolute@1.0.1 
+│ ├── private@0.1.7 
+│ ├── slash@1.0.0 
+│ └── source-map@0.5.6 
+├─┬ babel-loader@6.4.1 
+│ ├─┬ find-cache-dir@0.1.1 
+│ │ ├── commondir@1.0.1 
+│ │ └─┬ pkg-dir@1.0.0 
+│ │   └─┬ find-up@1.1.2 
+│ │     └── path-exists@2.1.0 
+│ ├─┬ loader-utils@0.2.17 
+│ │ ├── big.js@3.1.3 
+│ │ └── emojis-list@2.1.0 
+│ ├─┬ mkdirp@0.5.1 
+│ │ └── minimist@0.0.8 
+│ └── object-assign@4.1.1 
+├─┬ babel-preset-es2015@6.24.0 
+│ ├── babel-plugin-check-es2015-constants@6.22.0 
+│ ├── babel-plugin-transform-es2015-arrow-functions@6.22.0 
+│ ├── babel-plugin-transform-es2015-block-scoped-functions@6.22.0 
+│ ├── babel-plugin-transform-es2015-block-scoping@6.23.0 
+│ ├─┬ babel-plugin-transform-es2015-classes@6.23.0 
+│ │ ├── babel-helper-define-map@6.23.0 
+│ │ ├── babel-helper-function-name@6.23.0 
+│ │ ├── babel-helper-optimise-call-expression@6.23.0 
+│ │ └── babel-helper-replace-supers@6.23.0 
+│ ├── babel-plugin-transform-es2015-computed-properties@6.22.0 
+│ ├── babel-plugin-transform-es2015-destructuring@6.23.0 
+│ ├── babel-plugin-transform-es2015-duplicate-keys@6.22.0 
+│ ├── babel-plugin-transform-es2015-for-of@6.23.0 
+│ ├── babel-plugin-transform-es2015-function-name@6.22.0 
+│ ├── babel-plugin-transform-es2015-literals@6.22.0 
+│ ├── babel-plugin-transform-es2015-modules-amd@6.24.0 
+│ ├─┬ babel-plugin-transform-es2015-modules-commonjs@6.24.0 
+│ │ └── babel-plugin-transform-strict-mode@6.22.0 
+│ ├─┬ babel-plugin-transform-es2015-modules-systemjs@6.23.0 
+│ │ └── babel-helper-hoist-variables@6.22.0 
+│ ├── babel-plugin-transform-es2015-modules-umd@6.24.0 
+│ ├── babel-plugin-transform-es2015-object-super@6.22.0 
+│ ├─┬ babel-plugin-transform-es2015-parameters@6.23.0 
+│ │ ├── babel-helper-call-delegate@6.22.0 
+│ │ └── babel-helper-get-function-arity@6.22.0 
+│ ├── babel-plugin-transform-es2015-shorthand-properties@6.22.0 
+│ ├── babel-plugin-transform-es2015-spread@6.22.0 
+│ ├─┬ babel-plugin-transform-es2015-sticky-regex@6.22.0 
+│ │ └── babel-helper-regex@6.22.0 
+│ ├── babel-plugin-transform-es2015-template-literals@6.22.0 
+│ ├── babel-plugin-transform-es2015-typeof-symbol@6.23.0 
+│ ├─┬ babel-plugin-transform-es2015-unicode-regex@6.22.0 
+│ │ └─┬ regexpu-core@2.0.0 
+│ │   ├── regenerate@1.3.2 
+│ │   ├── regjsgen@0.2.0 
+│ │   └─┬ regjsparser@0.1.5 
+│ │     └── jsesc@0.5.0 
+│ └─┬ babel-plugin-transform-regenerator@6.22.0 
+│   └── regenerator-transform@0.9.8 
+├─┬ cooking@1.5.0 
+│ ├─┬ 2webpack2@1.2.1 
+│ │ └─┬ object-set@1.0.1 
+│ │   ├── is-index@1.0.2 
+│ │   ├── is-nil@1.0.1 
+│ │   ├── is-object@1.0.1 
+│ │   └─┬ to-path@1.0.1 
+│ │     ├─┬ is-array-like@1.1.2 
+│ │     │ ├── is-array@1.0.1 
+│ │     │ ├── is-function@1.0.1 
+│ │     │ └── is-window@1.0.2 
+│ │     ├── is-symbol@1.0.1 
+│ │     └── to-str@1.0.0 
+│ ├─┬ chalk@1.1.3 
+│ │ ├── ansi-styles@2.2.1 
+│ │ ├── escape-string-regexp@1.0.5 
+│ │ ├── has-ansi@2.0.0 
+│ │ └── supports-color@2.0.0 
+│ ├─┬ commander@2.9.0 
+│ │ └── graceful-readlink@1.0.1 
+│ ├─┬ is-path-inside@1.0.0 
+│ │ └── path-is-inside@1.0.2 
+│ ├─┬ progress-bar-webpack-plugin@1.9.3 
+│ │ ├─┬ object.assign@4.0.4 
+│ │ │ ├─┬ define-properties@1.1.2 
+│ │ │ │ └── foreach@2.0.5 
+│ │ │ ├── function-bind@1.1.0 
+│ │ │ └── object-keys@1.0.11 
+│ │ └── progress@1.1.8 
+│ ├─┬ shelljs@0.7.7 
+│ │ ├─┬ glob@7.1.1 
+│ │ │ ├── fs.realpath@1.0.0 
+│ │ │ ├─┬ inflight@1.0.6 
+│ │ │ │ └── wrappy@1.0.2 
+│ │ │ └── once@1.4.0 
+│ │ └─┬ rechoir@0.6.2 
+│ │   └─┬ resolve@1.3.2 
+│ │     └── path-parse@1.0.5 
+│ └─┬ webpack-hud@0.1.1 
+│   ├─┬ bottom-tip@0.0.4 
+│   │ ├── hsl@0.1.1 
+│   │ └─┬ virtual-dom@2.1.1 
+│   │   ├── browser-split@0.0.1 
+│   │   ├─┬ error@4.4.0 
+│   │   │ ├── camelize@1.0.0 
+│   │   │ └── string-template@0.2.1 
+│   │   ├─┬ ev-store@7.0.0 
+│   │   │ └── individual@3.0.0 
+│   │   ├─┬ global@4.3.1 
+│   │   │ ├─┬ min-document@2.19.0 
+│   │   │ │ └── dom-walk@0.1.1 
+│   │   │ └── process@0.5.2 
+│   │   ├── next-tick@0.2.2 
+│   │   ├── x-is-array@0.1.0 
+│   │   └── x-is-string@0.1.0 
+│   └─┬ doc-ready@1.0.4 
+│     └── eventie@1.0.6 
+├─┬ cooking-vue2@0.3.1 
+│ ├─┬ vue-loader@11.3.4 
+│ │ ├── consolidate@0.14.5 
+│ │ ├── hash-sum@1.0.2 
+│ │ ├─┬ js-beautify@1.6.12 
+│ │ │ ├─┬ config-chain@1.1.11 
+│ │ │ │ ├── ini@1.3.4 
+│ │ │ │ └── proto-list@1.2.4 
+│ │ │ ├─┬ editorconfig@0.13.2 
+│ │ │ │ ├── lru-cache@3.2.0 
+│ │ │ │ └── sigmund@1.0.1 
+│ │ │ └─┬ nopt@3.0.6 
+│ │ │   └── abbrev@1.1.0 
+│ │ ├── loader-utils@1.1.0 
+│ │ ├─┬ lru-cache@4.0.2 
+│ │ │ ├── pseudomap@1.0.2 
+│ │ │ └── yallist@2.1.2 
+│ │ ├─┬ postcss-selector-parser@2.2.3 
+│ │ │ ├── flatten@1.0.2 
+│ │ │ ├── indexes-of@1.0.1 
+│ │ │ └── uniq@1.0.1 
+│ │ ├── vue-hot-reload-api@2.0.11 
+│ │ ├─┬ vue-style-loader@2.0.5 
+│ │ │ └── loader-utils@1.1.0 
+│ │ └── vue-template-es2015-compiler@1.5.1 
+│ └─┬ vue-template-compiler@2.2.6 
+│   ├── de-indent@1.0.2 
+│   └── he@1.1.1 
+├─┬ UNMET PEER DEPENDENCY css-loader@0.27.3
+│ ├─┬ css-selector-tokenizer@0.7.0 
+│ │ ├── cssesc@0.1.0 
+│ │ └── regexpu-core@1.0.0 
+│ ├─┬ cssnano@3.10.0 
+│ │ ├─┬ autoprefixer@6.7.7 
+│ │ │ ├─┬ browserslist@1.7.7 
+│ │ │ │ └── electron-to-chromium@1.3.2 
+│ │ │ ├── caniuse-db@1.0.30000646 
+│ │ │ ├── normalize-range@0.1.2 
+│ │ │ └── num2fraction@1.2.2 
+│ │ ├── decamelize@1.2.0 
+│ │ ├── defined@1.0.0 
+│ │ ├── has@1.0.1 
+│ │ ├─┬ postcss-calc@5.3.1 
+│ │ │ ├── postcss-message-helpers@2.0.0 
+│ │ │ └─┬ reduce-css-calc@1.3.0 
+│ │ │   ├── math-expression-evaluator@1.2.16 
+│ │ │   └── reduce-function-call@1.0.2 
+│ │ ├─┬ postcss-colormin@2.2.2 
+│ │ │ └─┬ colormin@1.1.2 
+│ │ │   ├─┬ color@0.11.4 
+│ │ │   │ ├── clone@1.0.2 
+│ │ │   │ ├─┬ color-convert@1.9.0 
+│ │ │   │ │ └── color-name@1.1.2 
+│ │ │   │ └── color-string@0.3.0 
+│ │ │   └── css-color-names@0.0.4 
+│ │ ├── postcss-convert-values@2.6.1 
+│ │ ├── postcss-discard-comments@2.0.4 
+│ │ ├── postcss-discard-duplicates@2.1.0 
+│ │ ├── postcss-discard-empty@2.1.0 
+│ │ ├── postcss-discard-overridden@0.1.1 
+│ │ ├─┬ postcss-discard-unused@2.2.3 
+│ │ │ └── uniqs@2.0.0 
+│ │ ├─┬ postcss-filter-plugins@2.0.2 
+│ │ │ └─┬ uniqid@4.1.1 
+│ │ │   └── macaddress@0.2.8 
+│ │ ├── postcss-merge-idents@2.1.7 
+│ │ ├── postcss-merge-longhand@2.0.2 
+│ │ ├─┬ postcss-merge-rules@2.1.2 
+│ │ │ ├─┬ caniuse-api@1.5.3 
+│ │ │ │ ├── lodash.memoize@4.1.2 
+│ │ │ │ └── lodash.uniq@4.5.0 
+│ │ │ └── vendors@1.0.1 
+│ │ ├── postcss-minify-font-values@1.0.5 
+│ │ ├── postcss-minify-gradients@1.0.5 
+│ │ ├─┬ postcss-minify-params@1.2.2 
+│ │ │ └── alphanum-sort@1.0.2 
+│ │ ├── postcss-minify-selectors@2.1.1 
+│ │ ├── postcss-normalize-charset@1.1.1 
+│ │ ├─┬ postcss-normalize-url@3.0.8 
+│ │ │ ├── is-absolute-url@2.1.0 
+│ │ │ └─┬ normalize-url@1.9.1 
+│ │ │   ├─┬ query-string@4.3.2 
+│ │ │   │ └── strict-uri-encode@1.1.0 
+│ │ │   └─┬ sort-keys@1.1.2 
+│ │ │     └── is-plain-obj@1.1.0 
+│ │ ├── postcss-ordered-values@2.2.3 
+│ │ ├── postcss-reduce-idents@2.4.0 
+│ │ ├── postcss-reduce-initial@1.0.1 
+│ │ ├── postcss-reduce-transforms@1.0.4 
+│ │ ├─┬ postcss-svgo@2.1.6 
+│ │ │ ├─┬ is-svg@2.1.0 
+│ │ │ │ └── html-comment-regex@1.1.1 
+│ │ │ └─┬ svgo@0.7.2 
+│ │ │   ├─┬ coa@1.0.1 
+│ │ │   │ └── q@1.5.0 
+│ │ │   ├── colors@1.1.2 
+│ │ │   ├─┬ csso@2.3.2 
+│ │ │   │ └── clap@1.1.3 
+│ │ │   ├─┬ js-yaml@3.7.0 
+│ │ │   │ └── esprima@2.7.3 
+│ │ │   ├── sax@1.2.2 
+│ │ │   └── whet.extend@0.9.9 
+│ │ ├── postcss-unique-selectors@2.0.2 
+│ │ ├── postcss-value-parser@3.3.0 
+│ │ └── postcss-zindex@2.2.0 
+│ ├── loader-utils@1.1.0 
+│ ├── lodash.camelcase@4.3.0 
+│ ├── postcss-modules-extract-imports@1.0.1 
+│ ├─┬ postcss-modules-local-by-default@1.1.1 
+│ │ └─┬ css-selector-tokenizer@0.6.0 
+│ │   └── regexpu-core@1.0.0 
+│ ├─┬ postcss-modules-scope@1.0.2 
+│ │ └─┬ css-selector-tokenizer@0.6.0 
+│ │   └── regexpu-core@1.0.0 
+│ ├─┬ postcss-modules-values@1.2.2 
+│ │ └── icss-replace-symbols@1.0.2 
+│ └── source-list-map@0.1.8 
+├─┬ UNMET PEER DEPENDENCY extract-text-webpack-plugin@2.1.0
+│ ├─┬ ajv@4.11.5 
+│ │ ├── co@4.6.0 
+│ │ └─┬ json-stable-stringify@1.0.1 
+│ │   └── jsonify@0.0.0 
+│ ├── async@2.2.0 
+│ ├── loader-utils@1.1.0 
+│ └── webpack-sources@0.1.5 
+├── file-loader@0.9.0 
+├─┬ html-loader@0.4.5 
+│ ├─┬ es6-templates@0.2.3 
+│ │ ├─┬ recast@0.11.23 
+│ │ │ ├── ast-types@0.9.6 
+│ │ │ └── esprima@3.1.3 
+│ │ └── through@2.3.8 
+│ ├── fastparse@1.1.1 
+│ ├─┬ html-minifier@3.4.2 
+│ │ ├─┬ camel-case@3.0.0 
+│ │ │ ├─┬ no-case@2.3.1 
+│ │ │ │ └── lower-case@1.1.4 
+│ │ │ └── upper-case@1.1.3 
+│ │ ├── clean-css@4.0.10 
+│ │ ├─┬ ncname@1.0.0 
+│ │ │ └── xml-char-classes@1.0.0 
+│ │ ├── param-case@2.1.1 
+│ │ └── relateurl@0.2.7 
+│ └── loader-utils@1.1.0 
+├─┬ html-webpack-plugin@2.28.0 
+│ ├── bluebird@3.5.0 
+│ ├─┬ pretty-error@2.0.3 
+│ │ ├─┬ renderkid@2.0.1 
+│ │ │ ├─┬ css-select@1.2.0 
+│ │ │ │ ├── boolbase@1.0.0 
+│ │ │ │ ├── css-what@2.1.0 
+│ │ │ │ ├─┬ domutils@1.5.1 
+│ │ │ │ │ └─┬ dom-serializer@0.1.0 
+│ │ │ │ │   ├── domelementtype@1.1.3 
+│ │ │ │ │   └── entities@1.1.1 
+│ │ │ │ └── nth-check@1.0.1 
+│ │ │ ├─┬ dom-converter@0.1.4 
+│ │ │ │ └── utila@0.3.3 
+│ │ │ ├─┬ htmlparser2@3.3.0 
+│ │ │ │ ├── domelementtype@1.3.0 
+│ │ │ │ ├── domhandler@2.1.0 
+│ │ │ │ ├── domutils@1.1.6 
+│ │ │ │ └─┬ readable-stream@1.0.34 
+│ │ │ │   └── isarray@0.0.1 
+│ │ │ └── utila@0.3.3 
+│ │ └── utila@0.4.0 
+│ └── toposort@1.0.3 
+├── json-loader@0.5.4 
+├─┬ mint-ui@2.2.2 
+│ ├── array-find-index@1.0.2 
+│ ├── raf.js@0.0.4 
+│ └── vue-lazyload@1.0.3 
+├─┬ postcss@5.2.16 
+│ ├── js-base64@2.1.9 
+│ └─┬ supports-color@3.2.3 
+│   └── has-flag@1.0.0 
+├─┬ postcss-loader@1.3.3 
+│ ├── loader-utils@1.1.0 
+│ └─┬ postcss-load-config@1.2.0 
+│   ├─┬ cosmiconfig@2.1.1 
+│   │ ├─┬ js-yaml@3.8.2 
+│   │ │ └─┬ argparse@1.0.9 
+│   │ │   └── sprintf-js@1.0.3 
+│   │ ├── minimist@1.2.0 
+│   │ ├─┬ parse-json@2.2.0 
+│   │ │ └─┬ error-ex@1.3.1 
+│   │ │   └── is-arrayish@0.2.1 
+│   │ └── require-from-string@1.2.1 
+│   ├── postcss-load-options@1.2.0 
+│   └── postcss-load-plugins@2.3.0 
+├─┬ style-loader@0.13.2 
+│ └── loader-utils@1.1.0 
+├─┬ url-loader@0.5.8 
+│ ├── loader-utils@1.1.0 
+│ └── mime@1.3.4 
+├── vue@2.2.6 
+├─┬ vue-resource@1.2.1 
+│ └─┬ got@6.7.1 
+│   ├─┬ create-error-class@3.0.2 
+│   │ └── capture-stack-trace@1.0.0 
+│   ├── duplexer3@0.1.4 
+│   ├── get-stream@3.0.0 
+│   ├── is-redirect@1.0.0 
+│   ├── is-retry-allowed@1.1.0 
+│   ├── is-stream@1.1.0 
+│   ├── lowercase-keys@1.0.0 
+│   ├── safe-buffer@5.0.1 
+│   ├── timed-out@4.0.1 
+│   ├── unzip-response@2.0.1 
+│   └─┬ url-parse-lax@1.0.0 
+│     └── prepend-http@1.0.4 
+├── vue-router@2.3.1 
+├─┬ webpack@2.3.2 
+│ ├── acorn@4.0.11 
+│ ├── acorn-dynamic-import@2.0.2 
+│ ├── ajv-keywords@1.5.1 
+│ ├─┬ enhanced-resolve@3.1.0 
+│ │ └── graceful-fs@4.1.11 
+│ ├── interpret@1.0.2 
+│ ├── loader-runner@2.3.0 
+│ ├─┬ memory-fs@0.4.1 
+│ │ ├─┬ errno@0.1.4 
+│ │ │ └── prr@0.0.0 
+│ │ └─┬ readable-stream@2.2.6 
+│ │   ├── buffer-shims@1.0.0 
+│ │   ├── core-util-is@1.0.2 
+│ │   ├── isarray@1.0.0 
+│ │   ├── process-nextick-args@1.0.7 
+│ │   └── util-deprecate@1.0.2 
+│ ├─┬ node-libs-browser@2.0.0 
+│ │ ├── assert@1.4.1 
+│ │ ├─┬ browserify-zlib@0.1.4 
+│ │ │ └── pako@0.2.9 
+│ │ ├─┬ buffer@4.9.1 
+│ │ │ ├── base64-js@1.2.0 
+│ │ │ ├── ieee754@1.1.8 
+│ │ │ └── isarray@1.0.0 
+│ │ ├─┬ console-browserify@1.1.0 
+│ │ │ └── date-now@0.1.4 
+│ │ ├── constants-browserify@1.0.0 
+│ │ ├─┬ crypto-browserify@3.11.0 
+│ │ │ ├─┬ browserify-cipher@1.0.0 
+│ │ │ │ ├─┬ browserify-aes@1.0.6 
+│ │ │ │ │ └── buffer-xor@1.0.3 
+│ │ │ │ ├─┬ browserify-des@1.0.0 
+│ │ │ │ │ └── des.js@1.0.0 
+│ │ │ │ └── evp_bytestokey@1.0.0 
+│ │ │ ├─┬ browserify-sign@4.0.4 
+│ │ │ │ ├── bn.js@4.11.6 
+│ │ │ │ ├── browserify-rsa@4.0.1 
+│ │ │ │ ├─┬ elliptic@6.4.0 
+│ │ │ │ │ ├── brorand@1.1.0 
+│ │ │ │ │ ├── hash.js@1.0.3 
+│ │ │ │ │ ├── hmac-drbg@1.0.0 
+│ │ │ │ │ └── minimalistic-crypto-utils@1.0.1 
+│ │ │ │ └─┬ parse-asn1@5.1.0 
+│ │ │ │   └── asn1.js@4.9.1 
+│ │ │ ├── create-ecdh@4.0.0 
+│ │ │ ├─┬ create-hash@1.1.2 
+│ │ │ │ ├── cipher-base@1.0.3 
+│ │ │ │ ├── ripemd160@1.0.1 
+│ │ │ │ └── sha.js@2.4.8 
+│ │ │ ├── create-hmac@1.1.4 
+│ │ │ ├─┬ diffie-hellman@5.0.2 
+│ │ │ │ └── miller-rabin@4.0.0 
+│ │ │ ├── pbkdf2@3.0.9 
+│ │ │ ├── public-encrypt@4.0.0 
+│ │ │ └── randombytes@2.0.3 
+│ │ ├── domain-browser@1.1.7 
+│ │ ├── events@1.1.1 
+│ │ ├── https-browserify@0.0.1 
+│ │ ├── os-browserify@0.2.1 
+│ │ ├── path-browserify@0.0.0 
+│ │ ├── process@0.11.9 
+│ │ ├── punycode@1.4.1 
+│ │ ├── querystring-es3@0.2.1 
+│ │ ├─┬ readable-stream@2.2.6 
+│ │ │ └── isarray@1.0.0 
+│ │ ├─┬ stream-browserify@2.0.1 
+│ │ │ └─┬ readable-stream@2.2.6 
+│ │ │   └── isarray@1.0.0 
+│ │ ├─┬ stream-http@2.6.3 
+│ │ │ ├── builtin-status-codes@3.0.0 
+│ │ │ ├─┬ readable-stream@2.2.6 
+│ │ │ │ └── isarray@1.0.0 
+│ │ │ ├── to-arraybuffer@1.0.1 
+│ │ │ └── xtend@4.0.1 
+│ │ ├── string_decoder@0.10.31 
+│ │ ├─┬ timers-browserify@2.0.2 
+│ │ │ └── setimmediate@1.0.5 
+│ │ ├── tty-browserify@0.0.0 
+│ │ ├─┬ url@0.11.0 
+│ │ │ ├── punycode@1.3.2 
+│ │ │ └── querystring@0.2.0 
+│ │ ├─┬ util@0.10.3 
+│ │ │ └── inherits@2.0.1 
+│ │ └─┬ vm-browserify@0.0.4 
+│ │   └── indexof@0.0.1 
+│ ├── supports-color@3.2.3 
+│ ├── tapable@0.2.6 
+│ ├─┬ uglify-js@2.8.20 
+│ │ ├── uglify-to-browserify@1.0.2 
+│ │ └─┬ yargs@3.10.0 
+│ │   ├── camelcase@1.2.1 
+│ │   ├─┬ cliui@2.1.0 
+│ │   │ ├─┬ center-align@0.1.3 
+│ │   │ │ ├─┬ align-text@0.1.4 
+│ │   │ │ │ ├── longest@1.0.1 
+│ │   │ │ │ └── repeat-string@1.6.1 
+│ │   │ │ └── lazy-cache@1.0.4 
+│ │   │ ├── right-align@0.1.3 
+│ │   │ └── wordwrap@0.0.2 
+│ │   └── window-size@0.1.0 
+│ ├── watchpack@1.3.1 
+│ ├─┬ webpack-sources@0.2.3 
+│ │ └── source-list-map@1.1.1 
+│ └─┬ yargs@6.6.0 
+│   ├── camelcase@3.0.0 
+│   ├─┬ cliui@3.2.0 
+│   │ └── wrap-ansi@2.1.0 
+│   ├── get-caller-file@1.0.2 
+│   ├─┬ os-locale@1.4.0 
+│   │ └─┬ lcid@1.0.0 
+│   │   └── invert-kv@1.0.0 
+│   ├─┬ read-pkg-up@1.0.1 
+│   │ └─┬ read-pkg@1.1.0 
+│   │   ├─┬ load-json-file@1.1.0 
+│   │   │ ├── pify@2.3.0 
+│   │   │ └─┬ strip-bom@2.0.0 
+│   │   │   └── is-utf8@0.2.1 
+│   │   ├─┬ normalize-package-data@2.3.6 
+│   │   │ ├── hosted-git-info@2.4.1 
+│   │   │ ├─┬ is-builtin-module@1.0.0 
+│   │   │ │ └── builtin-modules@1.1.1 
+│   │   │ ├── semver@5.3.0 
+│   │   │ └─┬ validate-npm-package-license@3.0.1 
+│   │   │   ├─┬ spdx-correct@1.0.2 
+│   │   │   │ └── spdx-license-ids@1.2.2 
+│   │   │   └── spdx-expression-parse@1.0.4 
+│   │   └── path-type@1.1.0 
+│   ├── require-directory@2.1.1 
+│   ├── require-main-filename@1.0.1 
+│   ├── set-blocking@2.0.0 
+│   ├─┬ string-width@1.0.2 
+│   │ ├── code-point-at@1.1.0 
+│   │ └─┬ is-fullwidth-code-point@1.0.0 
+│   │   └── number-is-nan@1.0.1 
+│   ├── which-module@1.0.0 
+│   ├── y18n@3.2.1 
+│   └─┬ yargs-parser@4.2.1 
+│     └── camelcase@3.0.0 
+└─┬ webpack-dev-server@2.4.2 
+  ├── ansi-html@0.0.7 
+  ├─┬ chokidar@1.6.1 
+  │ ├─┬ anymatch@1.3.0 
+  │ │ └── arrify@1.0.1 
+  │ ├── async-each@1.0.1 
+  │ ├── glob-parent@2.0.0 
+  │ ├── inherits@2.0.3 
+  │ ├─┬ is-binary-path@1.0.1 
+  │ │ └── binary-extensions@1.8.0 
+  │ ├─┬ is-glob@2.0.1 
+  │ │ └── is-extglob@1.0.0 
+  │ └─┬ readdirp@2.1.0 
+  │   ├─┬ readable-stream@2.2.6 
+  │   │ └── isarray@1.0.0 
+  │   └── set-immediate-shim@1.0.1 
+  ├─┬ compression@1.6.2 
+  │ ├─┬ accepts@1.3.3 
+  │ │ └── negotiator@0.6.1 
+  │ ├── bytes@2.3.0 
+  │ ├─┬ compressible@2.0.10 
+  │ │ └── mime-db@1.27.0 
+  │ ├─┬ debug@2.2.0 
+  │ │ └── ms@0.7.1 
+  │ ├── on-headers@1.0.1 
+  │ └── vary@1.1.1 
+  ├── connect-history-api-fallback@1.3.0 
+  ├─┬ express@4.15.2 
+  │ ├── array-flatten@1.1.1 
+  │ ├── content-disposition@0.5.2 
+  │ ├── content-type@1.0.2 
+  │ ├── cookie@0.3.1 
+  │ ├── cookie-signature@1.0.6 
+  │ ├── debug@2.6.1 
+  │ ├── depd@1.1.0 
+  │ ├── encodeurl@1.0.1 
+  │ ├── escape-html@1.0.3 
+  │ ├── etag@1.8.0 
+  │ ├─┬ finalhandler@1.0.1 
+  │ │ └── unpipe@1.0.0 
+  │ ├── fresh@0.5.0 
+  │ ├── merge-descriptors@1.0.1 
+  │ ├── methods@1.1.2 
+  │ ├─┬ on-finished@2.3.0 
+  │ │ └── ee-first@1.1.1 
+  │ ├── parseurl@1.3.1 
+  │ ├── path-to-regexp@0.1.7 
+  │ ├─┬ proxy-addr@1.1.4 
+  │ │ ├── forwarded@0.1.0 
+  │ │ └── ipaddr.js@1.3.0 
+  │ ├── qs@6.4.0 
+  │ ├── range-parser@1.2.0 
+  │ ├─┬ send@0.15.1 
+  │ │ ├── debug@2.6.1 
+  │ │ ├── destroy@1.0.4 
+  │ │ └── http-errors@1.6.1 
+  │ ├── serve-static@1.12.1 
+  │ ├── setprototypeof@1.0.3 
+  │ ├── statuses@1.3.1 
+  │ ├─┬ type-is@1.6.15 
+  │ │ └── media-typer@0.3.0 
+  │ └── utils-merge@1.0.0 
+  ├── html-entities@1.2.0 
+  ├─┬ http-proxy-middleware@0.17.4 
+  │ ├─┬ http-proxy@1.16.2 
+  │ │ ├── eventemitter3@1.2.0 
+  │ │ └── requires-port@1.0.0 
+  │ ├─┬ is-glob@3.1.0 
+  │ │ └── is-extglob@2.1.1 
+  │ └─┬ micromatch@2.3.11 
+  │   ├─┬ arr-diff@2.0.0 
+  │   │ └── arr-flatten@1.0.1 
+  │   ├── array-unique@0.2.1 
+  │   ├─┬ braces@1.8.5 
+  │   │ ├─┬ expand-range@1.8.2 
+  │   │ │ └─┬ fill-range@2.2.3 
+  │   │ │   ├── is-number@2.1.0 
+  │   │ │   ├─┬ isobject@2.1.0 
+  │   │ │   │ └── isarray@1.0.0 
+  │   │ │   └── randomatic@1.1.6 
+  │   │ ├── preserve@0.2.0 
+  │   │ └── repeat-element@1.1.2 
+  │   ├─┬ expand-brackets@0.1.5 
+  │   │ └── is-posix-bracket@0.1.1 
+  │   ├── extglob@0.3.2 
+  │   ├── filename-regex@2.0.0 
+  │   ├─┬ kind-of@3.1.0 
+  │   │ └── is-buffer@1.1.5 
+  │   ├─┬ normalize-path@2.1.1 
+  │   │ └── remove-trailing-separator@1.0.1 
+  │   ├─┬ object.omit@2.0.1 
+  │   │ ├─┬ for-own@0.1.5 
+  │   │ │ └── for-in@1.0.2 
+  │   │ └── is-extendable@0.1.1 
+  │   ├─┬ parse-glob@3.0.4 
+  │   │ ├── glob-base@0.3.0 
+  │   │ └── is-dotfile@1.0.2 
+  │   └─┬ regex-cache@0.4.3 
+  │     ├── is-equal-shallow@0.1.3 
+  │     └── is-primitive@2.0.0 
+  ├─┬ opn@4.0.2 
+  │ └─┬ pinkie-promise@2.0.1 
+  │   └── pinkie@2.0.4 
+  ├─┬ portfinder@1.0.13 
+  │ └── async@1.5.2 
+  ├─┬ serve-index@1.8.0 
+  │ ├── batch@0.5.3 
+  │ ├─┬ debug@2.2.0 
+  │ │ └── ms@0.7.1 
+  │ ├─┬ http-errors@1.5.1 
+  │ │ └── setprototypeof@1.0.2 
+  │ └── mime-types@2.1.15 
+  ├─┬ sockjs@0.3.18 
+  │ ├─┬ faye-websocket@0.10.0 
+  │ │ └─┬ websocket-driver@0.6.5 
+  │ │   └── websocket-extensions@0.1.1 
+  │ └── uuid@2.0.3 
+  ├─┬ sockjs-client@1.1.2 
+  │ ├─┬ eventsource@0.1.6 
+  │ │ └─┬ original@1.0.0 
+  │ │   └── url-parse@1.0.5 
+  │ ├── faye-websocket@0.11.1 
+  │ ├── json3@3.3.2 
+  │ └─┬ url-parse@1.1.8 
+  │   └── querystringify@0.0.4 
+  ├─┬ spdy@3.4.4 
+  │ ├── handle-thing@1.2.5 
+  │ ├── http-deceiver@1.2.7 
+  │ ├── select-hose@2.0.0 
+  │ └─┬ spdy-transport@2.0.18 
+  │   ├─┬ hpack.js@2.1.6 
+  │   │ └─┬ readable-stream@2.2.6 
+  │   │   └── isarray@1.0.0 
+  │   ├── obuf@1.1.1 
+  │   ├─┬ readable-stream@2.2.6 
+  │   │ └── isarray@1.0.0 
+  │   └─┬ wbuf@1.7.2 
+  │     └── minimalistic-assert@1.0.0 
+  ├─┬ strip-ansi@3.0.1 
+  │ └── ansi-regex@2.1.1 
+  ├── supports-color@3.2.3 
+  ├── webpack-dev-middleware@1.10.1 
+  └─┬ yargs@6.6.0 
+    ├── camelcase@3.0.0 
+    └── cliui@3.2.0 
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN cooking@1.5.0 requires a peer of css-loader@^0.24.0 but none was installed.
+npm WARN cooking@1.5.0 requires a peer of extract-text-webpack-plugin@1 || 2.0.0-beta.4 but none was installed.
+npm WARN webapp@1.0.0 No description
+npm WARN webapp@1.0.0 No repository field.
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ ls
+archive(1).zip   dist_vue.zip       node_modules  test.js
+archive.zip      index.html         package.json  未命名文件夹
+cooking.conf.js  linux慕课笔记.odt  src           用过的命令行
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ npm run dev
+
+> webapp@1.0.0 dev /home/rong/桌面
+> cooking watch
+
+
+[cooking@1.5.0] - Loaded success: vue2
+
+[cooking@1.5.0] - Loading server...
+[cooking@1.5.0] - Listening at http://0.0.0.0:8888
+
+webpack: Compiled successfully.
+^C
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ ls
+archive(1).zip   dist_vue.zip       node_modules  test.js
+archive.zip      index.html         package.json  未命名文件夹
+cooking.conf.js  linux慕课笔记.odt  src           用过的命令行
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ mkdir zzzzz
+rong@rong-GE60-0NC-GE60-0ND:~/桌面$ cd zzzzz/
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive
+archive(1).zip  archive.zip     
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive
+archive(1).zip  archive.zip     
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive
+archive(1).zip  archive.zip     
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive
+archive(1).zip  archive.zip     
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive(1).zip .
+bash: 未预期的符号 `(' 附近有语法错误
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ mv ../archive\(1\).zip .
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ ls
+archive(1).zip
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ unzip archive\(1\).zip 
+Archive:  archive(1).zip
+26bca3c5785b0bf9a6ad87120ea84d5570d48734
+  inflating: .babelrc                
+ extracting: .gitignore              
+   creating: assets/
+   creating: assets/i/
+  inflating: assets/i/logo.png       
+  inflating: assets/i/placehold.png  
+   creating: assets/mock/
+  inflating: assets/mock/get_ad_banner.json  
+  inflating: cooking.conf.js         
+   creating: dist/
+  inflating: dist/0.a7468b4.js       
+  inflating: dist/1.1977fae.js       
+  inflating: dist/2.f33ebe7.js       
+  inflating: dist/app.4ca4547.css    
+  inflating: dist/app.c9d93e8.js     
+   creating: dist/assets/
+   creating: dist/assets/i/
+  inflating: dist/assets/i/logo.png  
+  inflating: dist/assets/i/placehold.png  
+   creating: dist/assets/mock/
+  inflating: dist/assets/mock/get_ad_banner.json  
+  inflating: dist/index.html         
+  inflating: index.html              
+  inflating: package.json            
+  inflating: postcss.config.js       
+   creating: src/
+  inflating: src/app.sass            
+  inflating: src/app.vue             
+  inflating: src/main.js             
+   creating: src/pages/
+  inflating: src/pages/home.vue      
+   creating: src/pages/test/
+  inflating: src/pages/test/detail.vue  
+  inflating: src/pages/test/list.vue  
+   creating: src/routes/
+  inflating: src/routes/web.js       
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ npm install -g npminstall
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+/usr/local/lib
+└─┬ npminstall@2.29.1 
+  ├─┬ agentkeepalive@3.1.0 
+  │ └── humanize-ms@1.2.0 
+  ├── await-event@1.0.0 
+  ├── binary-mirror-config@1.5.0 
+  ├── bytes@2.5.0 
+  ├─┬ chalk@1.1.3 
+  │ ├── ansi-styles@2.2.1 
+  │ ├── escape-string-regexp@1.0.5 
+  │ ├─┬ has-ansi@2.0.0 
+  │ │ └── ansi-regex@2.1.1 
+  │ ├── strip-ansi@3.0.1 
+  │ └── supports-color@2.0.0 
+  ├─┬ cmd-shim@2.0.2 
+  │ └── graceful-fs@4.1.11 
+  ├── co@4.6.0 
+  ├─┬ co-fs-extra@1.2.1 
+  │ ├─┬ co-from-stream@0.0.0 
+  │ │ └── co-read@0.0.1 
+  │ ├─┬ fs-extra@0.26.7 
+  │ │ ├── jsonfile@2.4.0 
+  │ │ ├── klaw@1.3.1 
+  │ │ └── path-is-absolute@1.0.1 
+  │ └─┬ thunkify-wrap@1.0.4 
+  │   └── enable@1.3.2 
+  ├─┬ co-parallel@1.0.0 
+  │ └── co-thread@0.0.1 
+  ├─┬ debug@2.6.3 
+  │ └── ms@0.7.2 
+  ├── destroy@1.0.4 
+  ├── minimist@1.2.0 
+  ├─┬ mkdirp@0.5.1 
+  │ └── minimist@0.0.8 
+  ├── moment@2.18.1 
+  ├── ms@0.7.3 
+  ├─┬ mz@2.6.0 
+  │ ├── any-promise@1.3.0 
+  │ ├── object-assign@4.1.1 
+  │ └─┬ thenify-all@1.6.0 
+  │   └── thenify@3.2.1 
+  ├─┬ node-gyp@3.6.0 
+  │ ├── fstream@1.0.11 
+  │ ├─┬ glob@7.1.1 
+  │ │ ├── fs.realpath@1.0.0 
+  │ │ ├─┬ inflight@1.0.6 
+  │ │ │ └── wrappy@1.0.2 
+  │ │ └── once@1.4.0 
+  │ ├─┬ minimatch@3.0.3 
+  │ │ └─┬ brace-expansion@1.1.6 
+  │ │   ├── balanced-match@0.4.2 
+  │ │   └── concat-map@0.0.1 
+  │ ├─┬ nopt@3.0.6 
+  │ │ └── abbrev@1.1.0 
+  │ ├─┬ npmlog@4.0.2 
+  │ │ ├─┬ are-we-there-yet@1.1.2 
+  │ │ │ ├── delegates@1.0.0 
+  │ │ │ └─┬ readable-stream@2.2.6 
+  │ │ │   ├── buffer-shims@1.0.0 
+  │ │ │   ├── isarray@1.0.0 
+  │ │ │   ├── process-nextick-args@1.0.7 
+  │ │ │   ├── string_decoder@0.10.31 
+  │ │ │   └── util-deprecate@1.0.2 
+  │ │ ├── console-control-strings@1.1.0 
+  │ │ ├─┬ gauge@2.7.3 
+  │ │ │ ├── aproba@1.1.1 
+  │ │ │ ├── has-unicode@2.0.1 
+  │ │ │ ├── signal-exit@3.0.2 
+  │ │ │ ├─┬ string-width@1.0.2 
+  │ │ │ │ ├── code-point-at@1.1.0 
+  │ │ │ │ └─┬ is-fullwidth-code-point@1.0.0 
+  │ │ │ │   └── number-is-nan@1.0.1 
+  │ │ │ └── wide-align@1.1.0 
+  │ │ └── set-blocking@2.0.0 
+  │ ├─┬ osenv@0.1.4 
+  │ │ ├── os-homedir@1.0.2 
+  │ │ └── os-tmpdir@1.0.2 
+  │ ├─┬ request@2.81.0 
+  │ │ ├── aws-sign2@0.6.0 
+  │ │ ├── aws4@1.6.0 
+  │ │ ├── caseless@0.12.0 
+  │ │ ├─┬ combined-stream@1.0.5 
+  │ │ │ └── delayed-stream@1.0.0 
+  │ │ ├── extend@3.0.0 
+  │ │ ├── forever-agent@0.6.1 
+  │ │ ├─┬ form-data@2.1.2 
+  │ │ │ └── asynckit@0.4.0 
+  │ │ ├─┬ har-validator@4.2.1 
+  │ │ │ ├─┬ ajv@4.11.5 
+  │ │ │ │ └─┬ json-stable-stringify@1.0.1 
+  │ │ │ │   └── jsonify@0.0.0 
+  │ │ │ └── har-schema@1.0.5 
+  │ │ ├─┬ hawk@3.1.3 
+  │ │ │ ├── boom@2.10.1 
+  │ │ │ ├── cryptiles@2.0.5 
+  │ │ │ ├── hoek@2.16.3 
+  │ │ │ └── sntp@1.0.9 
+  │ │ ├─┬ http-signature@1.1.1 
+  │ │ │ ├── assert-plus@0.2.0 
+  │ │ │ ├─┬ jsprim@1.4.0 
+  │ │ │ │ ├── assert-plus@1.0.0 
+  │ │ │ │ ├── extsprintf@1.0.2 
+  │ │ │ │ ├── json-schema@0.2.3 
+  │ │ │ │ └── verror@1.3.6 
+  │ │ │ └─┬ sshpk@1.11.0 
+  │ │ │   ├── asn1@0.2.3 
+  │ │ │   ├── assert-plus@1.0.0 
+  │ │ │   ├── bcrypt-pbkdf@1.0.1 
+  │ │ │   ├─┬ dashdash@1.14.1 
+  │ │ │   │ └── assert-plus@1.0.0 
+  │ │ │   ├── ecc-jsbn@0.1.1 
+  │ │ │   ├─┬ getpass@0.1.6 
+  │ │ │   │ └── assert-plus@1.0.0 
+  │ │ │   ├── jodid25519@1.0.2 
+  │ │ │   ├── jsbn@0.1.1 
+  │ │ │   └── tweetnacl@0.14.5 
+  │ │ ├── is-typedarray@1.0.0 
+  │ │ ├── isstream@0.1.2 
+  │ │ ├── json-stringify-safe@5.0.1 
+  │ │ ├─┬ mime-types@2.1.15 
+  │ │ │ └── mime-db@1.27.0 
+  │ │ ├── oauth-sign@0.8.2 
+  │ │ ├── performance-now@0.2.0 
+  │ │ ├── qs@6.4.0 
+  │ │ ├── safe-buffer@5.0.1 
+  │ │ ├── stringstream@0.0.5 
+  │ │ ├─┬ tough-cookie@2.3.2 
+  │ │ │ └── punycode@1.4.1 
+  │ │ └── tunnel-agent@0.6.0 
+  │ └─┬ which@1.2.14 
+  │   └── isexe@2.0.0 
+  ├── node-homedir@1.0.0 
+  ├── normalize-git-url@3.0.2 
+  ├─┬ npm-package-arg@4.2.1 
+  │ └── hosted-git-info@2.4.1 
+  ├─┬ ora@1.2.0 
+  │ ├─┬ cli-cursor@2.1.0 
+  │ │ └─┬ restore-cursor@2.0.0 
+  │ │   └─┬ onetime@2.0.1 
+  │ │     └── mimic-fn@1.1.0 
+  │ ├── cli-spinners@1.0.0 
+  │ └── log-symbols@1.0.2 
+  ├── rimraf@2.6.1 
+  ├─┬ runscript@1.2.1 
+  │ └─┬ is-type-of@1.0.0 
+  │   ├── core-util-is@1.0.2 
+  │   └── is-class@0.0.4 
+  ├── semver@5.3.0 
+  ├─┬ tar@2.2.1 
+  │ ├── block-stream@0.0.9 
+  │ └── inherits@2.0.3 
+  ├─┬ urllib@2.21.2 
+  │ ├── content-type@1.0.2 
+  │ ├─┬ default-user-agent@1.0.0 
+  │ │ └─┬ os-name@1.0.3 
+  │ │   ├── osx-release@1.1.0 
+  │ │   └── win-release@1.1.1 
+  │ ├─┬ digest-header@0.0.1 
+  │ │ └─┬ utility@0.1.11 
+  │ │   └── address@1.0.1 
+  │ ├── ee-first@1.1.1 
+  │ ├── iconv-lite@0.4.15 
+  │ └── statuses@1.3.1 
+  ├─┬ utility@1.11.0 
+  │ ├── copy-to@2.0.1 
+  │ └── escape-html@1.0.3 
+  └── uuid@3.0.1 
+
+npm ERR! Linux 4.4.0-21-generic
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "npminstall"
+npm ERR! node v7.8.0
+npm ERR! npm  v4.2.0
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/rong/.npm/_logs/2017-04-01T13_13_05_121Z-debug.log
+rong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ sudo npm install -g npminstall
+[sudo] rong 的密码： 
+/usr/local/bin/npminstall -> /usr/local/lib/node_modules/npminstall/bin/install.js
+
+
+
+ong@rong-GE60-0NC-GE60-0ND:~/桌面/zzzzz$ npm run dev
+
+> webapp@1.0.0 dev /home/rong/桌面/zzzzz
+> cooking watch
+
+
+[cooking@1.5.0] - Loaded success: vue2
+[cooking@1.5.0] - Loaded success: sass
+

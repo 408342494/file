@@ -1,0 +1,25 @@
+$ tar -zxvf  flash_player_ppapi_linux.x86_64.tar.gz   
+//解压  flash_player_ppapi_linux.x86_64.tar.gz 
+
+git commit -a
+//添加修改过需要推送的文件
+
+git commit -m "first commit"
+//添加第一次需要推送的文件
+
+git remote add origin git@github.com:408342494/test.git
+
+git push -u origin master
+//推送到仓库
+
+
+//git示范 待使用
+echo "# -" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:408342494/-.git
+git push -u origin master
+
+git remote add origin git@github.com:408342494/-.git
+git push -u origin master
