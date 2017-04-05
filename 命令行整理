@@ -12,6 +12,25 @@ git remote add origin git@github.com:408342494/test.git
 git push -u origin master
 //推送到仓库
 
+$  git config --global user.name "win_rjj"
+// 设置名字
+
+$ git config --global user.email "408342494@qq.com"
+// 设置邮箱
+
+$  git config -l
+//打印信息确认邮箱名字
+
+$ ssh-keygen -t rsa -C "408342494@qq.com"
+//生成key 需要按几下回车   登录github官网，打开account下的setting
+
+$ ssh git@github.com
+//连接git 确认绑定  需要按回车
+
+$ git clone git@github.com:408342494/test.git
+测试是否能读取 408342494/test.git  这个项目
+
+
 
 //git示范 待使用
 echo "# -" >> README.md
